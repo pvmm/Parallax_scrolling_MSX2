@@ -15,4 +15,6 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
-*.BAS	 diff=astextplain
+
+*.bat  binary
+*.BAT  binary
