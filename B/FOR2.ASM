@@ -239,7 +239,7 @@ main_loop:
         ENDIF
          
         call    calcXY          ; calculate new screen absolute position scrX,scrY
-        call    nxtxy           ; calcualte new realtive screen position XPOS,YPOS
+        call    nxtxy           ; calculate new relative screen position XPOS,YPOS
 
         call    intsetclrxyshp
         call bar_proc           ; Do things while the scorebar is active (page swap, plot borders)
