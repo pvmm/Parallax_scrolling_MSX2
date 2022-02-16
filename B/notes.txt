@@ -1,0 +1,13 @@
+
+vdp 0x0f, 2 -> read status register 2 (when HMMC, LMMC and LMCM
+
+TR, VR, HR, BD, 1, 1, EO, CE
+
+    TR is set when VDP is ready for next transfer from CPU to VRAM. (See HMMC, LMMC and LMCM commands)
+    VR is set during scanning of VBLANK area of the screen, i.e. during vertical retrace plus while lower and upper borders of the screen are drawn.
+    HR is set during scanning of HBLANK area of the screen, i.e. when right and left borders of the screen are drawn.
+    BD is set when the SEARCH command met the border.
+    EO is set to indicate the second field otherwise, it's the first.
+    CE is set to indicate that VDP is busy executing a command.
+
+
